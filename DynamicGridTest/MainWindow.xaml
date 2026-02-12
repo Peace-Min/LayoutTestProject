@@ -111,15 +111,15 @@
                     <!-- Layout Options (Explicit XAML) -->
                     <TextBlock Text="레이아웃:" Foreground="#AAAAAA" VerticalAlignment="Center" Margin="0,0,8,0" FontSize="12"/>
                     <StackPanel Orientation="Horizontal">
-                        <!-- Landscape Grid -->
+                        <!-- Landscape Grid (3x2) -->
                         <RadioButton Tag="GridLandscape" Click="LayoutRadioButton_Click" ToolTip="가로형 그리드" Style="{StaticResource IconRadioButtonStyle}" IsChecked="True" Margin="0,0,4,0">
-                            <Path Data="M4,4H10V10H4Z M14,4H20V10H14Z M4,14H10V20H4Z M14,14H20V20H14Z" 
+                            <Path Data="M1,4H6V9H1Z M7,4H12V9H7Z M13,4H18V9H13Z M1,11H6V16H1Z M7,11H12V16H7Z M13,11H18V16H13Z" 
                                   Fill="{Binding RelativeSource={RelativeSource AncestorType=RadioButton}, Path=Foreground}" Stretch="Uniform" Width="14" Height="14"/>
                         </RadioButton>
 
-                        <!-- Portrait Grid -->
+                        <!-- Portrait Grid (2x3) -->
                         <RadioButton Tag="GridPortrait" Click="LayoutRadioButton_Click" ToolTip="세로형 그리드" Style="{StaticResource IconRadioButtonStyle}" Margin="0,0,4,0">
-                            <Path Data="M6,2H10V8H6Z M14,2H18V8H14Z M6,10H10V16H6Z M14,10H18V16H14Z" 
+                            <Path Data="M4,1H9V6H4Z M11,1H16V6H11Z M4,7H9V12H4Z M11,7H16V12H11Z M4,13H9V18H4Z M11,13H16V18H11Z" 
                                   Fill="{Binding RelativeSource={RelativeSource AncestorType=RadioButton}, Path=Foreground}" Stretch="Uniform" Width="14" Height="14"/>
                         </RadioButton>
 
